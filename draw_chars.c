@@ -23,6 +23,7 @@ void print_char_5x7(char c)
       unsigned short colMask = 1 << (6-col);
       putchar((rowBits & colMask) ? '*' : ' ');
     }
-    putchar('\n')
+    putchar('\n');
   }
+  putchar('\n');
 }

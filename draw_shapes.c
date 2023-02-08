@@ -10,6 +10,7 @@ void print_square(int leftCol, int size)
     int col;
     for (col = 0; col < leftCol; col++) putchar(' ');
     for (       ; col < endCol;  col++) putchar('*');
+
     putchar('\n');
   }
 }
@@ -26,3 +27,9 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+//Prints an arrow
+void print_arrow(int leftCol,int size)
+{
+  print_triangle(leftCol,size);
+  print_square(leftCol+(size/2)+1,size);
+}
